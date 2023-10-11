@@ -1,15 +1,7 @@
-runtime: python27
-api_version: 1
-service: teta
-threadsafe: true
+runtime: nodejs18
+service: teta-develop
 
 handlers:
-- url: /
-  static_files: index.html
-  upload: index\.html
-  secure: always
-
-- url: /(.*)
-  static_files: \1
-  upload: (.*)
-  secure: always
+  - url: /.*
+    script: auto
+    secure: always
