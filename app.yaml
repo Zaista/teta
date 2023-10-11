@@ -1,13 +1,15 @@
 runtime: python27
 api_version: 1
-service: teta-develop
+service: teta
 threadsafe: true
 
 handlers:
   - url: /
-    static_files: www/index.html
-    upload: www/index.html
+    static_files: index.html
+    upload: index\.html
+    secure: always
 
   - url: /(.*)
-    static_files: www/\1
-    upload: www/(.*)
+    static_files: \1
+    upload: (.*)
+    secure: always
