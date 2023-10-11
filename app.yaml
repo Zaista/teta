@@ -1,6 +1,6 @@
 runtime: python27
 api_version: 1
-service: teta
+service: teta-develop
 threadsafe: true
 
 handlers:
