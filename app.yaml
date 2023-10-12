@@ -4,12 +4,12 @@ service: teta
 threadsafe: true
 
 handlers:
-- url: /
-  static_files: index.html
-  upload: index\.html
-  secure: always
+  - url: /
+    static_files: index.html
+    upload: index\.html
+    secure: always
 
-- url: /(.*)
-  static_files: \1
-  upload: (.*)
-  secure: always
+  - url: /(.*)
+    static_files: \1
+    upload: (.*)
+    secure: always
